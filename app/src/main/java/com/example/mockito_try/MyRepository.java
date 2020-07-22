@@ -6,7 +6,7 @@ public class MyRepository implements IRepository {
         this.mydatabase = database;
     }
 
-    public String getData(){
+    public String getData(String notNeeded){
        return mydatabase.getData();
     }
 }

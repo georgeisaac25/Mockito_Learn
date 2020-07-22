@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityPrese
 //        setSupportActionBar(toolbar);
 
         presenter = new MainActivityPresenter(new User(),new MyRepository(new Database()));
-        presenter.getData();
+        presenter.getData(1);
 
         myTextView = findViewById(R.id.myTextView);
         EditText userName = findViewById(R.id.username);
