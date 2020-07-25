@@ -1,5 +1,5 @@
 package com.example.mockito_try;
 
-interface IRepository {
-    public String getData(String i);
+public interface IRepository {
+    String getData(String i);
 }

@@ -11,11 +11,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity implements MainActivityPresenter.View {
 
     private MainActivityPresenter presenter;
+
     private TextView myTextView;
     private ProgressBar progressBar;
 
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityPrese
 //        setSupportActionBar(toolbar);
 
         presenter = new MainActivityPresenter(new User(),new MyRepository(new Database()));
+
         presenter.getData(1);
 
         myTextView = findViewById(R.id.myTextView);
